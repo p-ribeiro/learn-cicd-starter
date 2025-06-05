@@ -35,3 +35,6 @@ jobs:
         
       - name: Check style
         run: test -z $(go fmt ./...)
+
+      - name: Check linting
+        run: test -z $(staticcheck ./...)
